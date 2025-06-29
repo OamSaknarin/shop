@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📦 เช็คเลขพัสดุทุกบริษัท</title>
+  <style>
+    :root {
+      --main-color: #ff6f00;
+      --bg-gradient: linear-gradient(to right, #e0f7fa, #fce4ec);
+      --button-bg: #ffffff;
+      --button-hover: #f0f0f0;
+      --button-border: #ccc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 25px 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--button-bg);
+      border: 2px solid var(--button-border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .card img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .card button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #e65100;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>📦 ตรวจสอบพัสดุจากทุกบริษัทในที่เดียว</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Kerry_Express_logo.svg" alt="Kerry Express">
+    <form action="https://th.kerryexpress.com/th/track/" method="get" target="_blank">
+      <input type="text" name="track" placeholder="กรอกเลขพัสดุ Kerry">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flash_Express_logo.png" alt="Flash Express">
+    <form action="https://www.flashexpress.co.th/tracking/" method="get" target="_blank">
+      <input type="text" name="se" placeholder="กรอกเลขพัสดุ Flash">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <img src="https://track.thailandpost.co.th/img/logo-thailandpost.png" alt="Thailand Post">
+    <form action="https://track.thailandpost.co.th/" method="get" target="_blank">
+      <input type="text" name="trackNumber" placeholder="กรอกเลขพัสดุไปรษณีย์ไทย">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/J%26T_Express_logo.svg" alt="J&T Express">
+    <form action="https://www.jtexpress.co.th/tools/track" method="get" target="_blank">
+      <input type="text" name="awb" placeholder="กรอกเลขพัสดุ J&T">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <img src="https://seeklogo.com/images/D/dhl-logo-95D0BBAF60-seeklogo.com.png" alt="DHL">
+    <form action="https://www.dhl.com/th-th/home/tracking.html" method="get" target="_blank">
+      <input type="text" name="tracking-id" placeholder="กรอกเลขพัสดุ DHL">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <img src="https://spx.co.th/images/logo_spx.png" alt="Shopee Xpress">
+    <form action="https://spx.co.th/tracking" method="get" target="_blank">
+      <input type="text" name="tracking_number" placeholder="กรอกเลขพัสดุ Shopee Xpress">
+      <button type="submit">ตรวจสอบ</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 เว็บไซต์รวมลิงก์เช็คพัสดุ | ตรวจสอบได้ทุกบริษัทในหน้าเดียว 💡
+</footer>
+
+</body>
+</html>
